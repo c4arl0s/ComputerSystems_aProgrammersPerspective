@@ -52,3 +52,24 @@ Next, the assembler translates into machine language instructions, packages them
 **Linking Phase**
 Notice that our program calls the printf function, which is part of the standard C library privided by ever C compiler The printf function resides in a separate precompiled object file called printf.o, which must somehow be merged with our hellow.o program. The linked (ld) handles this mergin. The result is the hello file,w hich is an executable object file (or simply executable) that is ready to be loaded into memory and executed by the system.
 
+# [1.3 It pays to understand How Compilation System Works]()
+
+Important reasons why programmers needs to understand how compilation works:
+
+- **Optimzation program performance**
+- **Understanding link-time errors**
+- **Avoiding security holes**
+
+
+- **Optimzation program performance**
+
+Modern compilers are sophisticated tools that usually produce good code. As programmers, we do not need to know the inner workings of the compiler in order to write efficient code. However, in order to make god coding decisions in our C programs, we do need a basi understanding of machine-level code and how the compiler translates different C statements into machine code. For example, is a switch statement always more efficient than a sequence of if-else statements? how much overhead is incurred by a function call ?Is a while loop more efficient that a for loop? Are pointer references more efficient than array indexes ? Why does our loop run so much faster if we sum into a local variable instead of an argument that is passed by reference ? How can a function un faster when we simply rearrange the parentheses in an arithmetic expresion ?
+
+We describe how compilers translate different C constructs into these languages. In Chapter 5, you will learn hohw to tune the performance of your C programs by making simple transfromations to the C code that help the compiler do its job better. In Chapter 6, you will leran about the hierarchical nature of the memory system, how C compilers store data arrays in memory, and how your C programs can exploit this knowledge to run more efficiently.
+
+- **Understanding link-time errors**
+In our experience, some of the most perplexing programming errors are related to the operation of the linker, especially when you are trying to build large software systems. For example, what does it mean when the linker reports that it cannot resolve a reference? What is th difference between a static variable and a global variable ? What happens if you define two global variables in diferrent C files with the same name ? what is the difference between a static library and a dinamyc library ? Why does it matter what order we list libraries on the command line ? And scariest of all, why do some linker-related errors not appear until run time ?. You will learn tha answers to these kinds of questions in chapter 7.
+
+- **Avoiding security holes**
+For many years, **buffer overflow vulnerabilities** have accounted for the majority of security holes in network and Internet Servers. These vulnerabilities exist because too few programmers understand the need to carefully restrict the quantity and form of data they accept from untrusted sources. A first step in learning secure programming is to understand the consequences of the way data nd control information are stored on the program stack. We cover the stack discipline and buffer overflow vulnerabilities in Chapter 3 as part of our study of assembly language. We will also learn about methods that can be used by the programmer, compiler, and operating system to reduce the thread of attack.
+
