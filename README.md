@@ -91,4 +91,11 @@ The L1 and L2 caches are implemented with a hardware technology known as **stati
 
 One of he most important lessons in this book is that applications programmers who are aware of cache memories can exploit them to improve the performance of their programs by an order of magnitude. You will learn more about these importan devices and how to exploit them in Chapter 6.
 
+# [1.6 Storage Devices Form a Hiararchy]()
+
+Storage devices in every computer system are organized as a **memory hierarchy** similar to the figure. 1.9.
+
+![Screen Shot 2020-06-24 at 17 52 54](https://user-images.githubusercontent.com/24994818/85635470-8f368380-b643-11ea-9616-a68e62304e88.png)
+
+Just as programmers can exploit knowledge of the different caches to improve performance, programmers can exploit their understanding of the entire memory hierarchy. Chapter 6 will have much more to say about this.
 
