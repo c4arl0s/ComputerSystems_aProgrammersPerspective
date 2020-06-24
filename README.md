@@ -73,3 +73,22 @@ In our experience, some of the most perplexing programming errors are related to
 - **Avoiding security holes**
 For many years, **buffer overflow vulnerabilities** have accounted for the majority of security holes in network and Internet Servers. These vulnerabilities exist because too few programmers understand the need to carefully restrict the quantity and form of data they accept from untrusted sources. A first step in learning secure programming is to understand the consequences of the way data nd control information are stored on the program stack. We cover the stack discipline and buffer overflow vulnerabilities in Chapter 3 as part of our study of assembly language. We will also learn about methods that can be used by the programmer, compiler, and operating system to reduce the thread of attack.
 
+# [1.5 Caches Matters]()
+
+Because of the physical laws, larger storage devices are slower than smaller storage devices. And faster devices are more expensive to build than their slower counterparts.
+
+It is easier and cheaper to make processors run faster than it is to make main memory run faster.
+
+To deal with the processor-memory gap, system designers include smaller faster storage devices called **cache memories** that serve as temporary staging areas for information that the processor is likely to need in the near future .
+
+![Screen Shot 2020-06-24 at 17 34 54](https://user-images.githubusercontent.com/24994818/85634486-19c9b380-b641-11ea-9937-8728815f80bf.png)
+
+An **L1 cache** on the processor chip holds tens of thousands of bytes and can be accessed nearly as fast as the register file.
+
+An **L2 cache** with hundred of thousands to million of bytes is connected to the proccessor by a special bus, It might take 5 times longer for the process to acces the L2 cache than the L1 cache, but this is still 5 to 10 times faster than acessing the main memory. 
+
+The L1 and L2 caches are implemented with a hardware technology known as **static random access memory** **(SRAM)**, Newer and more powerful systems even have three levels of cach: L1, L2, and L2. The idea behind caching is that a sustem can get the effect of both a very large memory and a very fast one by exploiting **locality**. the tendency for programs to access data and code in localized regions. By setting up caches to hold data that is likely to accessed often, we can perform most memory operations using the fast caches.
+
+One of he most important lessons in this book is that applications programmers who are aware of cache memories can exploit them to improve the performance of their programs by an order of magnitude. You will learn more about these importan devices and how to exploit them in Chapter 6.
+
+
