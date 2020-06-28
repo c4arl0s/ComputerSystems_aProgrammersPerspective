@@ -86,6 +86,20 @@ The shell is a command-line intpreter that prints a prompt, waits for you to typ
 
 # [1.4.1 Hardware Organization of a System]()
 
+To understand what happens to our hello program when we run it, we nee to understand the hardware organization of a typical system, which is shown in Figure 1.4. This particular picture is modeled after the family of Intel Pentium systems, but all systems have a similar look and feel. Don't worry about the complexity of this figure just now. We will get to its various details in stages throughout the course of the book.
+
+# [Buses]()
+# [I/O Devices]()
+# [Main Memory]()
+
+The main memory is a Temporary storage device ta holds both a program and the data it manipulates while the processor is executing the program. Physically, main memory consists of a collection of **dynamic random access memory** (DRAM) chips. Logically, memory is organized as a linear array of bytes, each with its own unique address (array index) starting at zero. In general, each of the machine instructions that constitute a program can consist of a variable number of bytes. The sizes of data items that correspond to C program variables vary according to type. For example, on an IA32 machine running Linux, data of type short requires two bytes, types int, float, and long four bytes, and type double eight bytes. Chapter 6 has more to say about how memory technologies such as DRAM chips work, and how they are combined to form main memory.
+
+# [Processor]()
+
+# [1.4.2 Running the hello Program]()
+
+
+
 # [1.5 Caches Matters]()
 
 Because of the physical laws, larger storage devices are slower than smaller storage devices. And faster devices are more expensive to build than their slower counterparts.
