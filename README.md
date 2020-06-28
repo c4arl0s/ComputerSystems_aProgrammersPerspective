@@ -73,6 +73,19 @@ In our experience, some of the most perplexing programming errors are related to
 - **Avoiding security holes**
 For many years, **buffer overflow vulnerabilities** have accounted for the majority of security holes in network and Internet Servers. These vulnerabilities exist because too few programmers understand the need to carefully restrict the quantity and form of data they accept from untrusted sources. A first step in learning secure programming is to understand the consequences of the way data nd control information are stored on the program stack. We cover the stack discipline and buffer overflow vulnerabilities in Chapter 3 as part of our study of assembly language. We will also learn about methods that can be used by the programmer, compiler, and operating system to reduce the thread of attack.
 
+# [1.4 Processors Read and Interpret instructions Stored in Memory]()
+
+At this point, our hello.c source program has been translated by the compilation system into an executable object file called hello that is stored on disk. To run the executable file on a Unix System, we type its name to an application program known as a **shell**:
+
+```console
+./hello
+hello, world
+```
+
+The shell is a command-line intpreter that prints a prompt, waits for you to type a command line, and then performs the command. If the first word of the command line does not correspond to a built-in shell commands, then the shell assumes that it is the name of an executable file that it should load and run. So in this case, the shell loads and runs the hello program and then waits for it to terminate. The hello program prints its messages to the screen an the terminates. The shell then prints a prompt and waits for the next input command line.
+
+# [1.4.1 Hardware Organization of a System]()
+
 # [1.5 Caches Matters]()
 
 Because of the physical laws, larger storage devices are slower than smaller storage devices. And faster devices are more expensive to build than their slower counterparts.
