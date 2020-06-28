@@ -98,7 +98,13 @@ The main memory is a Temporary storage device ta holds both a program and the da
 
 # [1.4.2 Running the hello Program]()
 
+Using a technique knows as **direct memory access** (DMA), the data travels directly from disk to main memory, without passing through the processor. 
 
+Once the code and data in the hello object file are loaded into memory, the processor begins executing the machine-language instructions in the hello program's main routine. These instructions copy the bytes in the "Hello, world\n" string from memory to the register file, and from there to the display device, where they are displayed on the screen
+
+![Screen Shot 2020-06-28 at 9 10 40](https://user-images.githubusercontent.com/24994818/85949952-563a2f80-b91f-11ea-9dd4-2b88d4ae4a78.png)
+![Screen Shot 2020-06-28 at 9 10 53](https://user-images.githubusercontent.com/24994818/85949953-5803f300-b91f-11ea-8184-af15d9b13326.png)
+![Screen Shot 2020-06-28 at 9 11 02](https://user-images.githubusercontent.com/24994818/85949954-59cdb680-b91f-11ea-8a33-054c865cfef8.png)
 
 # [1.5 Caches Matters]()
 
