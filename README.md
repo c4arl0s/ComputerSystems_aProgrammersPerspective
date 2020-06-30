@@ -134,3 +134,16 @@ Storage devices in every computer system are organized as a **memory hierarchy**
 
 Just as programmers can exploit knowledge of the different caches to improve performance, programmers can exploit their understanding of the entire memory hierarchy. Chapter 6 will have much more to say about this.
 
+# [1.7 The Operating System Manages the Hardware]()
+
+Back to our hello example. When the shell loaded and ran the hello program and when the hello program printed its messages, neither program accessed the keyboard, display, disk, or main memory directly. Rather, they relied on the services provided by the **operating system**. We can think of the operating system as a layer of software interposed between the application program ad the hardware, as shown in Figure 1.10. All attempts by an application program to manipulate the hardware must go through the operating system.
+
+![Screen Shot 2020-06-29 at 19 16 30](https://user-images.githubusercontent.com/24994818/86068483-123d4c80-ba3d-11ea-9b8a-b7bf40116422.png)
+
+
+The operating system has two primary purposes: 
+
+1. To protect the hardware from misuse by runaway applications, and
+2. to provide applications with simple and uniform mechanisms for manipulating complicated and often wildly different low-level hardware devices. The operating system achieves both goals via the fundamental abstraction shown in Figure 1.11: **Processes, virtual memory, and files**. As this figure suggest, files are abstractions for I/O devices, virtual memory is an abstraction for both the main memory and disk I/O devices, and processes are abstractions for the processor, main memory, and I/O devices. We will discuss each in turn.
+
+![Screen Shot 2020-06-29 at 19 20 59](https://user-images.githubusercontent.com/24994818/86068701-ad362680-ba3d-11ea-868e-98618c893494.png) 
