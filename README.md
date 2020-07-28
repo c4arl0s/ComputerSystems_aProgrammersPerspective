@@ -251,3 +251,13 @@ On the processor side, the instruction set architecture provides an abstraction 
 
 On the operating system side, we have introduced **three abstractions**: **files** as an abstraction of **I/O**, **virtual memory** as an abstraction of **program memory**, and **processes** as an abstraction of a **running program**. To these abstractions we add a new one: the **virtual machine**, providing an abstraction of **the entire computer**, including **the operating system**, **the processor**, and **the programs**. The idea of a virtual machine was introduced by IBM in the 1960s, but it has become more prominent recently as a way to manage computers that must be able to run programs designed for multiple operating systems (such as Microsoft Windows, MacOS, and Linux) or different versions of the same operating system.
 We will return to these abstractions in subsequent sections of the book.
+
+# [1.10 Summary]()
+
+A computer system consists of hardware and systems software that cooperate to run application programs. Information inside the computer is represented as groups of bits that are interpreted in different ways, depending on the context. Programs are translated by other programs into different forms, beginning as ASCII text and then translated by compilers and linkers into binary executable files.
+
+Processors read and interpret binary instructions that are stored in main memory. Since computers spend most of their time copying data between memory, I/O devices, and the CPU registers, the storage devices in a system are arranged in a hierarchy, with the CPU registers at the top, followed by multiple levels of hardware cache memories, DRAM main memory, and disk storage. Storage devices that are higher in the hierarchy are faster and more costly per bit than those lower in the hierarchy. Storage devices that are higher in the hierarchy serve as caches for devices that are lower in the hierarchy. **Programmers can optimize the performance of their C programs by understanding and exploiting the memory hierarchy**.
+	
+The operating system kernel serves as an intermediary between the application and the hardware. It provides three fundamental abstractions: (1) Files are abstractions for I/O devices. (2) Virtual memory is an abstraction for both main memory and disks. (3) Processes are abstractions for the processor, main memory, and I/O devices.
+Finally, networks provide ways for computer systems to communicate with one another. From the viewpoint of a particular system, the network is just another I/O device.
+
