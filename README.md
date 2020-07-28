@@ -239,4 +239,15 @@ Processors that can sustain execution rates faster than one instruction per cycl
 At the lowest level, many modern processors have special hardware that allows a single instruction to cause multiple operations to be performed in parallel, a mode known as **single-instruction**, multiple-data, or “**SIMD**” parallelism. For example, recent generations of Intel and AMD processors have instructions that can add four pairs of single-precision floating-point numbers (C data type float) in parallel.
 These SIMD instructions are provided mostly to speed up applications that process image, sound, and video data. Although some compilers attempt to automatically extract SIMD parallelism from C programs, a more reliable method is to write programs using special vector data types supported in compilers such as gcc. We describe this style of programming in Web Aside opt:simd, as a supplement to the more general presentation on program optimization found in Chapter 5.
 
+# [1.9.2 The Importance of Abstractions in Computer Systems]()
 
+The use of **abstractions** is one of the most important concepts in computer science. For example, one aspect of good programming practice is to formulate a simple application-program interface (API) for a set of functions that allow programmers to use the code without having to delve into its inner workings. Different programming languages provide different forms and levels of support for abstraction, such as Java class declarations and C function prototypes.
+
+We have already been introduced to several of the abstractions seen in computer systems, as indicated in Figure 1.18. 
+
+![Screen Shot 2020-07-28 at 18 02 18](https://user-images.githubusercontent.com/24994818/88730761-80d4ff00-d0fc-11ea-8b7a-c7dd2aebb3f2.png)
+
+On the processor side, the instruction set architecture provides an abstraction of the actual processor hardware. With this abstraction, a machine-code program behaves as if it were executed on a processor that performs just one instruction at a time. The underlying hardware is far more elaborate, executing multiple instructions in parallel, but always in a way that is consistent with the simple, sequential model. By keeping the same execution model, different processor implementations can execute the same machine code, while offering a range of cost and performance.
+
+On the operating system side, we have introduced **three abstractions**: **files** as an abstraction of **I/O**, **virtual memory** as an abstraction of **program memory**, and **processes** as an abstraction of a **running program**. To these abstractions we add a new one: the **virtual machine**, providing an abstraction of **the entire computer**, including **the operating system**, **the processor**, and **the programs**. The idea of a virtual machine was introduced by IBM in the 1960s, but it has become more prominent recently as a way to manage computers that must be able to run programs designed for multiple operating systems (such as Microsoft Windows, MacOS, and Linux) or different versions of the same operating system.
+We will return to these abstractions in subsequent sections of the book.
