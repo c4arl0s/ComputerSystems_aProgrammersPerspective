@@ -1,5 +1,11 @@
 # [go back to Overview](https://github.com/c4arl0s)
 
+In order to update an existing Git submodule execute: (You might need permissions from Owner to get submodules)
+
+```console
+git submodule update --remote --merge
+```
+
 # [Computer Systems - a Programmers Perspective](https://github.com/c4arl0s/ComputerSystems_aProgrammersPerspective#go-back-to-overview)
 
 1. [x] [1. A Tour of computer Systems](https://github.com/c4arl0s/ComputerSystemsAProgrammersPerspectiveContentIndex#1-atour-of-computer-systems) 

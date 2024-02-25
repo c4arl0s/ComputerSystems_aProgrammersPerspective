@@ -1,0 +1,21 @@
+[submodule "ComputerSystemsAProgrammersPerspectiveContentIndex"]
+	path = ComputerSystemsAProgrammersPerspectiveContentIndex
+	url = git@github.com:c4arl0s/ComputerSystemsAProgrammersPerspectiveContentIndex.git
+[submodule "1ATourOfComputerSystems"]
+	path = 1ATourOfComputerSystems
+	url = git@github.com:c4arl0s/1ATourOfComputerSystems.git
+[submodule "2RepresentingAndManipulatingInformation"]
+	path = 2RepresentingAndManipulatingInformation
+	url = git@github.com:c4arl0s/2RepresentingAndManipulatingInformation.git
+[submodule "3MachineLevelRepresentationOfPrograms"]
+	path = 3MachineLevelRepresentationOfPrograms
+	url = git@github.com:c4arl0s/3MachineLevelRepresentationOfPrograms.git
+[submodule "4ProcessorArchitecture"]
+	path = 4ProcessorArchitecture
+	url = git@github.com:c4arl0s/4ProcessorArchitecture.git
+[submodule "5OptimizingProgramPerformance"]
+	path = 5OptimizingProgramPerformance
+	url = git@github.com:c4arl0s/5OptimizingProgramPerformance.git
+[submodule "6TheMemoryHierarchy"]
+	path = 6TheMemoryHierarchy
+	url = git@github.com:c4arl0s/6TheMemoryHierarchy.git
